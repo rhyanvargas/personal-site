@@ -1,0 +1,510 @@
+/* ====== FONT IMPORTS ====== */
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,800';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow';
+@font-face {
+  font-family: 'Cooper Hewitt Light';
+	src:url('/assets/fonts/CooperHewitt-Light.eot'); /* IE9 Compat Modes */
+  src:
+    url('/assets/fonts/CooperHewitt-Light.woff') format('woff'),/* Pretty Modern Browsers */
+		url('assets/fonts/CooperHewitt-Light.svg') format('svg'); /* Legacy iOS */
+}
+
+/* ======= RESETS =======*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+		-webkit-margin-start:0;
+		-webkit-margin-end: 0;
+		-webkit-padding-start: 0;
+	vertical-align: baseline;
+}
+
+/* Universal Box Sizing with Inheritance */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+
+}
+
+/*==== RESPONSIVE TYPOGRAPHY ====*/
+
+  /*body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+    font-size-adjust: 0.5;
+  }*/
+
+  body {
+		font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1em;
+    /* equivalent to 16px */
+	  font-size: 100%;
+		height:auto;
+		line-height: 1.9;
+  }
+
+  @media (min-width: 43.75em) {
+  body {
+      font-size: 1em;
+      /* equivalent to 16px */
+      line-height: 1.375;
+      /* equivalent to 22px */
+    }
+  }
+
+  h1 {
+		font-family: 'Open Sans', sans-serif;
+    font-size: 2.25em;
+    /* 2x body copy size = 32px */
+		font-weight: 800;
+    line-height: 1.25;
+    /* 45px / 36px */
+  }
+
+  @media (min-width: 43.75em) {
+    h1 {
+      font-size: 2.5em;
+      /* 2.5x body copy size = 40px */
+      line-height: 1.125;
+    }
+  }
+
+  @media (min-width: 56.25em) {
+    h1 {
+      font-size: 3em;
+      /* 3x body copy size = 48px */
+      line-height: 1.05;
+      /* keep to a multiple of the 20px line height and something more appropriate for display headings */
+    }
+  }
+
+  h2 {
+		font-family: 'Cooper Hewitt Light', sans-serif;
+    font-size: 1.625em;
+		font-weight: normal;
+    /* 1.625x body copy size = 26px */
+    line-height: 1.15384615;
+    /* 30px / 26px */
+		text-transform: uppercase;
+  }
+
+  @media (min-width: 43.75em) {
+    h2 {
+      font-size: 2em;
+      /* 2x body copy size = 32px */
+      line-height: 1.25;
+    }
+  }
+
+  @media (min-width: 56.25em) {
+    h2 {
+      font-size: 2.25em;
+      /* 2.25x body copy size = 36px */
+      line-height: 1.25;
+    }
+  }
+
+  h3 {
+		font-family: 'Open Sans', sans-serif;
+    font-size: 1.375em;
+		font-weight: normal;
+    /* 1.375x body copy size = 22px */
+    line-height: 1.13636364;
+    /* 25px / 22px */
+  }
+
+  @media (min-width: 43.75em) {
+    h3 {
+      font-size: 1.5em;
+      /* 1.5x body copy size = 24px */
+      line-height: 1.25;
+    }
+  }
+
+  @media (min-width: 56.25em) {
+    h3 {
+      font-size: 1.75em;
+      /* 1.75x body copy size = 28px */
+      line-height: 1.25;
+    }
+  }
+
+  h4 {
+    font-size: 1.125em;
+    /* 1.125x body copy size = 18px */
+    line-height: 1.11111111;
+  }
+
+  @media (min-width: 43.75em) {
+    h4 {
+      line-height: 1.22222222;
+      /* (22px / 18px */
+    }
+  }
+
+  blockquote {
+    font-size: 1.25em;
+    /* 20px / 16px */
+    line-height: 1.25;
+    /* 25px / 20px */
+  }
+
+  @media (min-width: 43.75em) {
+    blockquote {
+      font-size: 1.5em;
+      /* 24px / 16px = */
+      line-height: 1.45833333;
+      /* 35px / 24px */
+    }
+  }
+
+
+/*============= GLOBAL =============*/
+
+body {
+	background-color: #0000;
+	overflow-x: hidden;
+	width:100vw;
+}
+
+/* Flex Containers */
+
+#wrapper,
+.full-width-row,
+.row,
+nav,
+nav>ul {
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display:flex;
+	justify-content: center;
+	width:100%;
+}
+
+#wrapper {
+	flex-flow: column wrap;
+	height: 100%;
+	width:100%;
+}
+
+.full-width-row {
+	flex-flow: column nowrap;
+}
+
+.row {
+flex-flow: column wrap;
+padding:6% 4%;
+
+}
+
+[class*='col-'] {
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display:flex;
+	justify-content: center;
+}
+.col-1 {
+	flex:1 100%;
+}
+
+.col-2 {
+	flex:1 50%;
+}
+
+.col-3 {
+	flex:1 33.333%;
+}
+
+.col-4 {
+	flex:1 25%;
+}
+
+.col-6 {
+	flex:1 16.666%;
+}
+
+/*  Medium to larger screens. Breakpoint at 980px */
+
+@media (min-width: 61.25em) {
+  .row {
+    flex-flow: row nowrap;
+    padding: 11% 9%;
+  }
+}
+
+/*============= STYLING COMPONENTS =========*/
+
+/* Styling the buton */
+
+.button {
+	 background: #3498db;
+	 border:none;
+	 border-radius: 2px;
+	 color: #fff;
+	 padding:.5em;
+	 text-decoration: none;
+	 transition: .2s ease-out;
+	 cursor: pointer;
+	 vertical-align: middle;
+	 -webkit-tap-highlight-color: transparent;
+}
+
+/* Large Button Material Design */
+
+.btn-large {
+	font-size: 1.25em
+    height: 54px;
+    line-height: 54px;
+}
+
+.btn-large {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+.btn-large{
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    outline: 0;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-large:hover , .button:hover {
+	  background-color:#42A681;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    transition: all .3s ease-out;
+}
+
+h2 {
+	padding-bottom: 6%;
+}
+
+a {
+	color: #42A681;
+}
+
+/*============= MAIN CONTENT =============*/
+
+	/*============= CONTACT BAR =============*/
+
+	#contact-bar {
+		background:none;
+		border-bottom: 2px dashed #333;
+		height:15em;
+		 padding: 10px;
+	}
+		#contact-bar>.row {
+			align-items: flex-start;
+		}
+
+			#contact-bar p>a {
+				color: #42A681;
+				text-decoration: none;
+			}
+
+			.close-btn:hover,
+			.close-btn:active{
+				background-color: #e74c3c;
+			}
+
+
+	.hide-contact-bar {
+		margin-top: -15em;
+		transition: margin-top .2s ease-out;
+	}
+
+	.show-contact-bar {
+		margin-top:0;
+		transition: margin-top .3s ease-in;
+	}
+
+		/*=== Smaller Screens > 528px ===*/
+
+		@media (min-width: 33em) {
+			#contact-bar {
+				flex-flow: row wrap;
+			}
+
+			.hide-contact-bar {
+			margin-top: -15em;
+			transition: margin-top .4s ease-out;
+		}
+		}
+
+			/*=== Medium Screens > 880px ===*/
+
+			@media (min-width: 55em) {
+				#contact-bar {
+					height: 7em;
+					width:100%;
+				}
+
+					#contact-bar>.row {
+						flex-flow: row wrap;
+					}
+
+			.hide-contact-bar {
+					margin-top: -8em;
+				}
+
+			}
+
+	/*============= MAIN NAVIGATION =========*/
+
+	header {
+		align-items: center;
+	  background: none;
+	  color: #333;
+	  flex-wrap: wrap;
+		height:19vh;
+	  justify-content: center;
+		padding: 6% 4%;
+	  width:100%;
+	}
+	  nav ul {
+			display: inline-flex;
+		  /*justify-content: space-around;*/
+			font-size: .8em;
+		}
+			/*applying a fixed margin to the right side of all nav items except the last one.*/
+			nav>ul>li {
+			  margin-right: 15px;
+			}
+
+				nav>ul>li>a {
+					color: #333;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+
+				nav>ul>li:nth-last-of-type(1) {
+					margin-right:0;
+				}
+
+				nav>ul>li>a[href="#contact-bar"] {
+					color: #fff;
+				}
+
+/*
+			/*======= Small/Medium Screens > 528px =======
+
+			@media (min-width: 33em) {
+
+
+			}
+
+			/*======= Medium Screens > 880px ========
+
+			@media (min-width: 55em) {
+		}
+*/
+
+	/*============= COVER SECTION =============*/
+
+	section:nth-of-type(1)>div:nth-of-type(1) {
+		height:68vh;
+	}
+
+		#cover>.row{
+			align-items: flex-start;
+			justify-content: center;
+		}
+
+	/*============= SKILLS =============*/
+
+	#skills {
+		background: #42A681;
+		height: 13vh;
+	}
+		#skills>.row {
+			flex-flow: row nowrap;
+			padding: 3%;
+		}
+			.skills-content-images {
+				padding-right: 13px;
+			}
+			.skills-content-images:nth-last-of-type(1) {
+					padding-right: 0;
+				}
+			#skills>h3 {
+				color:#fff;
+				font-size: .8em;
+				padding-top: 3%;
+			}
+	/*============= PORTFOLIO =============*/
+
+	/*============= ABOUT =============*/

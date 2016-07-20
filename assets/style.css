@@ -12,19 +12,10 @@
 
 /* ======= RESETS =======*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div,
+h1, h2, p,
+a, em, img, ol, ul, li,
+figure {
 
 	margin: 0;
 	padding: 0;
@@ -205,7 +196,7 @@ q:before, q:after {
   }
 p {
   position: relative;
-  top:.6em;
+  top:1.5em;
 }
 
 /*============= GLOBAL =============*/
@@ -234,13 +225,13 @@ body {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display:flex;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .row,
 .social-bar,
 .social-bar>ul,
-.content {
+#content {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -250,40 +241,35 @@ body {
 
 #wrapper,
 .full-width-row,
-.row
  {
 	height: 100%;
 	width:100%;
 }
 
 .row {
+
+flex: 1 100%;
 flex-flow: column nowrap;
-height:auto;
+height:100%;
+justify-content: center;
 padding-left:4%;
 padding-right:40%;
-
 }
 
-.col-2 {
-  justify-content: flex-start;
-  text-align: left;
+/*Break when text overflows over the books image @ 476px*/
+  @media (min-width: 29.75em){
+    .row {
+      padding-right:46%;
+    }
+#content {
+  align-items: flex-start;
+  flex-flow: column nowrap;
 }
-
-#spacer {
-  background: red;
-}
-#content>* {
-  margin-bottom:auto;
-}
-  #content>*:nth-last-child(1) {
-    margin-bottom: 0;
-  }
 
 /*============= Social Icons =============*/
 .social-bar {
     flex-flow: row wrap;
-    justify-content: flex-start;
-    margin-top: 6%;
+    margin-top: 1.9em;
     width:100%;
 }
 
@@ -306,6 +292,7 @@ padding-right:40%;
       max-width: 30px;
       height:auto;
       max-height:36px;
+      opacity: .3;
       transition: .3s ease-in-out;
       transform: scale(1);
         -webkit-transform: scale(1);
@@ -314,7 +301,31 @@ padding-right:40%;
     }
       /*animations*/
       .social-icons>figure:hover img {
+      opacity: 1;
 	    transform: scale(1.3);
         -webkit-transform: scale(1.3);
 
      }
+
+.social-icons>span {
+  position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}

@@ -68,7 +68,6 @@ q:before, q:after {
 
   body {
 		font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 1em;
     /* equivalent to 16px */
 	  font-size: 100%;
 		height:auto;
@@ -289,6 +288,7 @@ padding-right:40%;
 
 /*============= Component Styles =============*/
 
+
 .btn {
     cursor: pointer;
     display: inline-block;
@@ -296,8 +296,8 @@ padding-right:40%;
     outline: 0;
     border: none;
     vertical-align: baseline;
-    background: #E0E1E2;
-    color: rgba(0,0,0,.6);
+    background: #42a681;
+    color:#fff;
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
     margin:40px 0;
     padding: .78571429em 1.5em;
@@ -318,9 +318,21 @@ padding-right:40%;
     transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease;
     will-change: '';
     -webkit-tap-highlight-color: transparent;
+      transition: all .3s;
 }
 
+  .btn:hover {
+    font-weight: 900;
+    margin-left: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
 
+  .btn:active {
+    background: #42a681;
+    border: 1px solid #42a681;
+    color: #fff;
+  }
 
 /*============= Content Section =============*/
 

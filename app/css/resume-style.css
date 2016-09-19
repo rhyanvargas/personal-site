@@ -1,0 +1,133 @@
+
+/*============ GLOBAL RESET ===========*/
+
+/*============ GLOBAL STYLES ===========*/
+
+body {
+  background: #fff; color:#444;
+  font-size: 100%;
+  font-variant-ligatures: common-ligatures;
+  font-weight: 400; line-height:1.4;
+  margin: auto;
+  padding: 2em;
+  text-align: left;
+}
+
+time, .location {
+  color: #999;
+  display: inline;
+}
+
+time {
+  border-right: 1px solid #f1f1f1;
+  margin-right: .5em;
+  padding-right: .5em;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+ul {
+  list-style:none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: .6em 0;
+}
+
+header li {
+  margin: 0; color: #999;
+}
+
+a:link {
+  color:#DF3651; text-decoration:none;
+}
+
+a:visited {
+  color: #DF3651;
+}
+
+a:hover {
+  color: #000;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+/*============ SECTION STYLES ===========*/
+
+[role="relavent-courses"] {
+  font-size: 87.5% /*14px*/;
+}
+
+@media only screen and (min-width: 45em) {
+
+  body {
+    max-width:58.75em /*940px*/;
+  }
+
+  [role="banner"], .wrap {
+    width: 100%;
+  }
+
+  [role="main"] {
+    float: left; width: 66% /*620px*/;
+  }
+
+  [role="relavent-courses"] {
+    float: right; width: 32% /*300px*/;
+  }
+}
+
+/*============  GLOBAL TYPOGROPHY ============*/
+
+body, h1, h3 {
+  font-family: 'Source Serif Pro', Georgia, 'Times New Roman', Times, serif;
+}
+
+h2, h4, time, .location, .contact, [role="relavent-courses"] {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica , Arial, sans-serif;
+}
+
+h1 {
+  font-size:4em;
+  font-weight: 700;
+  line-height:1;
+  margin:.5em 0 0 0;
+  padding-bottom: .2em; }
+
+h2 {
+  color:#999;
+  font-size:1.3em;
+  font-weight: 400;
+  line-height:1;
+  letter-spacing: .05em;
+  margin: 0;
+  padding:0;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size:1.6em;
+  font-weight: 700;
+  line-height:1.2;
+  margin:.5em 0 0 0;
+  padding:0;
+}
+
+h4 {
+  font-size:1.2em;
+  font-weight: 400;
+  line-height:1.2;
+  margin:.3em 0 .5em 0;
+  padding:0;
+}

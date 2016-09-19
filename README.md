@@ -1,2 +1,2 @@
 # personal-site
-Rhyan's personal site to showcase my projects, resume and other things that Rhyan may be up to / insterested in.
+My personal site to showcase my projects, resume and other things that I may be up to / insterested in.

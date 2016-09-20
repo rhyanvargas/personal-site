@@ -48,7 +48,7 @@ header li {
 
 a:link {
   color:#42a681; text-decoration:none;
-  transition: color .5s
+  transition: color .5s;
 }
 
 a:visited {
@@ -84,7 +84,7 @@ a:hover, a:active {
   font-size: 87.5% /*14px*/;
 }
 
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 54.75em) {
 
   body {
     max-width:58.75em /*940px*/;
@@ -101,16 +101,17 @@ a:hover, a:active {
   }
 
   .contact {
-
     margin-top: 32px;
   }
+
   [role="main"],
   .name {
     float: left; width: 66% /*620px*/;
   }
 
   [role="relavent-courses"] {
-    float: right; width: 32% /*300px*/;
+    float: right;
+    width: 32% /*300px*/;
   }
 }
 

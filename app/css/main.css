@@ -288,7 +288,6 @@ padding-right:40%;
 
 /*============= Component Styles =============*/
 
-
 .btn {
     cursor: pointer;
     display: inline-block;
@@ -344,11 +343,6 @@ h1 {
   border-bottom: 10px solid #42a681;
   padding-bottom: 20px;
 }
-
-/*p {
-  border-top: 10px solid #3498DB
-  padding-bottom: 0px;
-}*/
 
 .social-bar {
     border-left:10px solid #3498DB

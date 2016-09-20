@@ -6,8 +6,8 @@
   font-family: 'Cooper Hewitt Light';
 	src:url('app/fonts/CooperHewitt-Light.eot'); /* IE9 Compat Modes */
   src:
-    url('app/fonts/CooperHewitt-Light.woff') format('woff'),/* Pretty Modern Browsers */
-		url('app/fonts/CooperHewitt-Light.svg') format('svg'); /* Legacy iOS */
+    url('/fonts/CooperHewitt-Light.woff') format('woff'),/* Pretty Modern Browsers */
+		url('/fonts/CooperHewitt-Light.svg') format('svg'); /* Legacy iOS */
 }
 
 /* ======= RESETS =======*/
@@ -219,7 +219,7 @@ p {
 /*============= GLOBAL =============*/
 
 html {
-background: url(/images/book-stacks-light-cover.jpeg) no-repeat center center fixed;
+background: url(/app/images/book-stacks-light-cover.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

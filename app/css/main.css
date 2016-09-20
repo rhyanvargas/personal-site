@@ -6,7 +6,7 @@
   font-family: 'Cooper Hewitt Light';
 	src:url('/app/fonts/CooperHewitt-Light.eot'); /* IE9 Compat Modes */
   src:
-    url('/app/fonts/CooperHewitt-Light.woff') format('woff'),/* Pretty Modern Browsers */
+    url('/app/fonts/CooperHewitt-Light') format('woff'),/* Pretty Modern Browsers */
 		url('/app/fonts/CooperHewitt-Light.svg') format('svg'); /* Legacy iOS */
 }
 

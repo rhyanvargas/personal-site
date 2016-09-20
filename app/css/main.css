@@ -219,7 +219,7 @@ p {
 /*============= GLOBAL =============*/
 
 html {
-background: url('/app/images/book-stacks-light-cover.jpeg') no-repeat center center fixed;
+background: url(/app/images/book-stacks-light-cover.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

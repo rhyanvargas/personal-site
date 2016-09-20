@@ -47,7 +47,8 @@ header li {
 }
 
 a:link {
-  color:#DF3651; text-decoration:none;
+  color:#42a681; text-decoration:none;
+  transition: color .5s
 }
 
 a:visited {
@@ -55,7 +56,9 @@ a:visited {
 }
 
 a:hover {
-  color: #000;
+  border-bottom: 3px solid #42a681;
+  color: #333;
+  transform: scale(1.1);
 }
 
 a:focus {
@@ -68,6 +71,15 @@ a:hover, a:active {
 
 /*============ SECTION STYLES ===========*/
 
+.name {
+  display: inline-block;
+  width: 100%;
+}
+
+.contact {
+  width: 100%;
+}
+
 [role="relavent-courses"] {
   font-size: 87.5% /*14px*/;
 }
@@ -78,11 +90,22 @@ a:hover, a:active {
     max-width:58.75em /*940px*/;
   }
 
-  [role="banner"], .wrap {
+  [role="banner"],
+  .wrap {
     width: 100%;
+    height: auto;
   }
 
-  [role="main"] {
+  .name h1 {
+    margin-top: 0;
+  }
+
+  .contact {
+
+    margin-top: 32px;
+  }
+  [role="main"],
+  .name {
     float: left; width: 66% /*620px*/;
   }
 

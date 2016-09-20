@@ -219,7 +219,7 @@ p {
 /*============= GLOBAL =============*/
 
 html {
-background: url(/app/images/windmill2-cover-light.jpeg) no-repeat center center fixed;
+background: url(/app/images/red-half-bg.jpeg) repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -275,16 +275,8 @@ flex-flow: column nowrap;
 height:100%;
 justify-content: center;
 padding-left:4%;
-padding-right:40%;
+padding-right:50%;
 }
-
-/*Break when text overflows over the books image @ 476px*/
-  @media (min-width: 29.75em){
-    .row {
-      padding-right:46%;
-    }
-}
-
 
 /*============= Component Styles =============*/
 
@@ -298,6 +290,7 @@ padding-right:40%;
     background: #42a681;
     color:#fff;
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-size: 0.8em;
     margin:40px 0;
     padding: .78571429em 1.5em;
     text-transform: none;
